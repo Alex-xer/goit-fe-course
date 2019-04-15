@@ -4,20 +4,22 @@
     box-sizing:  border-box;
 }
 .wrapper {
-    margin: 0 auto;
+    margin-top: 30px;
+    margin: auto;
     width: 470px;
+    height:  auto;
     border: 1px solid black;
 }  
   img {
-    margin-top: 34px;
-    margin-left:  22px;
-    width: 426px;
-    height: 284px;
+      margin-top: 34px;
+      margin-left:  22px;
+      width: 426px;
+      height: 284px;
 }
 div {
     margin-top: 32px;
     margin-left:  22px;
-}
+ }
 h2 {
     font-size: 30px;
 }
@@ -34,5 +36,4 @@ p {
     margin-bottom: 34px;
     margin-right: 22px;
     font-size: 14px;
-    line-height: 24;
 }
