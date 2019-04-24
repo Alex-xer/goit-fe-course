@@ -11,34 +11,34 @@ html{
 box-sizing: inherit;
 }
 .wrapper {
-    margin: 0 auto;
-   width: 1200px;
-   height: auto;
+   margin: 0 auto;
+   width: 900px;
+   height: auto; 
 }
 /*Menu*/
 .navigation{
-    margin-top: 74px;
-    margin-bottom: 100px;
+    padding-top: 74px;
+    padding-bottom: 100px;
     font-size: 14px;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }  
 .navigation ul{
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-left: 166px;
-    padding-right: 166px;
     text-align: center;
 }
 .navigation  ul li{
     display: inline-block;
     text-align: center;
 }
+.navigation nav a{
+    text-decoration: none;
+    color: black;
+}
 .navigation li:not(:last-child){
    margin-right: 100px;
 }
-.navigation li:hover,
-.navigation li:focus{
+.navigation li a:hover,
+.navigation li a:focus{
     color: #25b4f5;
     cursor: pointer;
 }
@@ -47,22 +47,19 @@ box-sizing: inherit;
 .section_4, .section_5, .section_6{
     display: inline-block;
     width: 420px;
-    height: 280px;
-}
-.section_1, .section_3, .section_5 {
-    margin-left: 150px;
-    margin-right: 60px;
-   }
-.section_3, .section_4, .section_5, .section_6{
-    margin-top: 132px;
-}
-img{
-    display: block;
-    max-width: 100%;
     height: auto;
 }
+.section_1, .section_3, .section_5 {
+    margin-right: 56px; 
+   } 
+.img {
+       width: 420px;
+       height: 280px;
+       margin-bottom: 32px;
+   }
 .style{
-    margin-top: 32px;
+    margin: 0px;
+    margin-bottom: 30px;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
@@ -70,28 +67,25 @@ img{
 }
 .text-style{
     font-family: 'Playfair Display', serif;
-    margin-top: 30px;
     opacity: 0.5;
 }
 .text-style h2{
     font-size: 30px;
+    margin-bottom: 32px;
 }
-.text-style p {
-    margin-top: 32px;
+.text-style p{
+    margin-bottom: 132px;
     text-align: justify;
 }
 /*button*/
 .button{
-    margin-top: 56px;
+    margin: 0 auto;
+    text-align: center;
+    height: 60px;
+    margin-top: -76px;
     margin-bottom: 70px;
     font-size: 20px;
-   /* border-bottom: solid 1 black;*/
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0px 32px 0px 32px;
     font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 504px;
     cursor: pointer;
 }
