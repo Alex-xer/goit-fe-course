@@ -50,19 +50,19 @@ box-sizing: inherit;
 section{
     font-size: 0px;
 }
-.section_1, .section_2,.section_3,
-.section_4, .section_5, .section_6{
+.section{
     display: inline-block;
     width: 420px;
     margin-bottom: 132px;
 }
-.section_1, .section_3, .section_5 {
-    margin-right: 60px; 
-   } 
-   .section_5, .section_6{
-       margin-bottom: 56px;
-   }
+.section:nth-child(2n+1){
+    margin-right: 60px;
+}
+.section:nth-last-child(-n+3){
+    margin-bottom: 56px;
+}
 .img {
+    display: block;
        width: 420px;
        height: 280px;
        margin-bottom: 30px;
