@@ -62,10 +62,9 @@ section{
     margin-bottom: 56px;
 }
 .img {
-    display: block;
-       width: 420px;
-       height: 280px;
-       margin-bottom: 30px;
+    width: 420px;
+    height: 280px;
+    margin-bottom: 30px;
    }
 .style{
     margin: 0px;
@@ -93,11 +92,15 @@ article p{
 /*button*/
 .button{
     margin: 0 auto;
+    border: 1px solid #626262;
+    background-color: #ffffff;
     text-align: center;
-    height: 60px;
+    padding: 20px 35px;
     font-size: 20px;
+    color: #626262;
+    line-height: 24px;
+    font-weight: 400;
     font-family: 'Playfair Display', serif;
     cursor: pointer;
-    width: 166px;
     display: block;
     }
