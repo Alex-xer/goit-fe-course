@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.navigation{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+}
+.navigation li{
+float: left;
+list-style-type: none;
+text-align: center;
+margin: 0 auto;
+}
+.navigation li:not(:last-child){
+margin-right: 30px;
+}
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 26px;
+    padding: 5px;
+    cursor: pointer;
+}
+.navigation a:hover{
+  
+    color: blueviolet;
+}
