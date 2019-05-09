@@ -21,6 +21,7 @@
 }
 .nav{
     float: right;
+    width: 465px;
     height: 22px;
     list-style: none;
     text-align: center;
@@ -31,10 +32,11 @@
     clear: both;
   }
 .nav li{
-    display: inline-block;
+    float: right;
+    height: 22px;
 }
 .nav li:nth-child(-n+5){
-    margin-right: 34px; 
+    margin-left: 50px; 
 }
 .nav a {
     text-decoration: none;
@@ -73,12 +75,11 @@ nav a:focus{
     color: #ffffff;
  
     background-color: #e9f0fd;
-}
-.features:not(:nth-child(4n)){
-    margin-right: 30px;
+} 
+.features:not(:nth-child(4n)) {
+    margin-right: 50px;
 }
 .img{
-    height: 282px;
     background-color: #e9f0fd;
 }
 .product{
