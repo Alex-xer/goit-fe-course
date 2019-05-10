@@ -15,7 +15,7 @@
     height: 22px;
     margin-bottom: 90px; 
 }
-.logo{
+ .logo{
     float: left;
     height: 22px;
 }
@@ -77,28 +77,39 @@ nav a:focus{
     background-color: #e9f0fd;
 } 
 .features:not(:nth-child(4n)) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 .img{
-    background-color: #e9f0fd;
+    float: left;
+    height: 280px;
+padding-left: 16px;
+
 }
 .product{
     width: 200px;
     height: 40px;
+    padding-left: 13px;
+    padding-top: 4px;
     background-color: #323232;
+    color: #ffffff;
     float: left;
+    text-decoration: none;
 }
 .prise{
     width: 55px;
     height: 40px;
+    padding-top: 4px;
     background-color: #8c8c8c;
     float: right;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
 }
-.blog{
+/* .blog{
     font-family: 'Open Sans', sans-serif;
     line-height: 26px;
     color: #555252;
-}
+} */
 .picture-description{
 font-size: 18px;
 font-weight: 600;
@@ -111,7 +122,7 @@ button{
     font-size: 16px;
     font-weight: 300;
     color: #ffffff;
-}
+} 
 /* .head-line:after{
     content: "";
     width: 160px;
