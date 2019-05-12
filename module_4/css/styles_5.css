@@ -15,13 +15,13 @@
     height: 22px;
     margin-bottom: 90px; 
 }
- .logo{
+.logo{
     float: left;
     height: 22px;
 }
 .nav{
     float: right;
-    width: 465px;
+    width: 551px;
     height: 22px;
     list-style: none;
     text-align: center;
@@ -33,7 +33,7 @@
   }
 .nav li{
     float: right;
-    height: 22px;
+    /* height: 22px; */
 }
 .nav li:nth-child(-n+5){
     margin-left: 50px; 
@@ -42,9 +42,10 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
     font-family:  'Roboto black', sans-serif;
     color: #0f0101;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 900;
     line-height: 11px;
 }
@@ -62,7 +63,18 @@ nav a:focus{
     font-weight: 900;
     line-height: 32px;
     color: #515151;
+    margin-bottom: 125px;
     }   
+.head-line::after{
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    float: left;
+    margin-left: 460px;
+    margin-top: 26px;
+    margin-bottom: 92px;
+}
 .features{
     float: left;
     margin-bottom: 30px;
@@ -73,18 +85,21 @@ nav a:focus{
     font-weight: 900;
     line-height: 32px;
     color: #ffffff;
- 
-    background-color: #e9f0fd;
 } 
 .features:not(:nth-child(4n)) {
     margin-right: 30px;
 }
-.img{
+.features a{
+    display: inline-block;
+    width: 255px;
+    height: 322px;
+}
+/* .img{
     float: left;
     height: 280px;
 padding-left: 16px;
 
-}
+} */
 .product{
     width: 200px;
     height: 40px;
@@ -94,6 +109,7 @@ padding-left: 16px;
     color: #ffffff;
     float: left;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .prise{
     width: 55px;
