@@ -13,16 +13,14 @@
 
 .page-header{
     height: 22px;
-    margin-bottom: 90px; 
+    margin-bottom: 105px; 
 }
 .logo{
     float: left;
-    height: 22px;
 }
 .nav{
     float: right;
-    width: 551px;
-    height: 22px;
+    padding-top: 5px;
     list-style: none;
     text-align: center;
 }
@@ -32,17 +30,16 @@
     clear: both;
   }
 .nav li{
-    float: right;
-    /* height: 22px; */
+    float: left;
 }
 .nav li:nth-child(-n+5){
-    margin-left: 50px; 
+    margin-right: 50px; 
 }
 .nav a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;
     font-family:  'Roboto black', sans-serif;
     color: #0f0101;
     font-size: 14px;
@@ -55,6 +52,9 @@ nav a:focus{
 }
 /* Features section */
 
+.item{
+    padding-bottom: 100px;
+}
  .head-line{
     text-align: center;
     font-family:  'Roboto', sans-serif;
@@ -77,7 +77,6 @@ nav a:focus{
 }
 .features{
     float: left;
-    margin-bottom: 30px;
     width: 255px;
     height: 322px;
     font-family: 'Roboto', sans-serif;
@@ -88,6 +87,9 @@ nav a:focus{
 } 
 .features:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+.features:nth-child(-n+4){
+    margin-bottom: 30px;
 }
 img {
     display: block;
@@ -114,6 +116,17 @@ img {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+}
+.features a:hover .product{ 
+   background-color: #1abc9c;
+}
+.features a:hover .prise{
+    background-color: #7fd9c7;
+}
+/* Aside blok */
+
+.articles{
+    margin: 0 auto;
 }
 /* .blog{
     font-family: 'Open Sans', sans-serif;
