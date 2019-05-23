@@ -23,14 +23,14 @@
     list-style: none;
     text-align: center;
 }
+nav li{
+    float: left;
+}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
   }
-nav li{
-    float: left;
-}
 .nav li:nth-child(-n+5){
     margin-right: 32px; 
 }
@@ -67,19 +67,51 @@ nav a:focus{
 .button{
     width: 104px;
     height: 104px;
-    background-color:#74c0ab;
+    background-color:#70bca9;
 }
  .left{
-        float: left;
-    }  
-.right{
+    float: left;
+    position: relative;
+}  
+.left>img{
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+}  
+ .right{
     float: right;
+    position: relative;
+}
+.right>img{
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  .left:hover, .right:hover{
+    background: #1abc9c;
+    cursor: pointer;
+}
+.left:hover::after{
+    content: "";
+    background-color: rgb(0, 0, 2);
+    /* opacity: 0.522; */
 }
 .slider-description{
-    padding-left: 60px;
-    padding-right: 60px;
+    display: inline-block;
     width: 902px;
-    text-align: center;
     /* font-size: 60px; */
     font-family: "Roboto black", sans-serif;
         color: white;
@@ -88,16 +120,17 @@ nav a:focus{
         /* text-align: left;
         position: absolute;
         left: 429.006px;
-        top: 383.672px;
-        width: 738px;
+         width: 738px;
         height: 98px;
         z-index: 74; */
 }
-    .slider-description>h2{
+.slider-description>h2{
       font-size: 60px;
+      padding-left: 60px;
+      
 }
 .slider-description>p{
-    padding-left: 80px;
+    padding-left: 60px;
     font-size: 20px;
     text-align: left;
 }
