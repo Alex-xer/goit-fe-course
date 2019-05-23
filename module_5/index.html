@@ -9,7 +9,7 @@
 </head>
 <body class="wraper">
     <!--menu-->
-    <header class="page-header">
+    <header class="page-header clearfix">
             <nav>
                 <a href="" class="logo">
                 <img src="./img/mart.png" alt="logotip">
@@ -28,13 +28,26 @@
     <main>
         <!--Sectio slider-->
         <section class="slider">
-            <h1>Affordable paris tours</h1>
-            <p>City tours/tour tickets/tour guides</p>
             <img src="./img/slide4.png" alt="Happy girls">
+           
+           <ul class="arrow">
+               <li class="left button"></li>
+               <li class="slider-description">
+                   <h2>Affordable paris tours</h2>
+                   <p>City tours/tour tickets/tour guides</p>
+               </li>
+               <li class="right button"></li>
+           </ul> <!-- <div class="arrow">
+            <h2>Affordable paris tours</h2>
+            <p>City tours/tour tickets/tour guides</p>
+            <button class="left button"></button>
+            <button class="right button"></button>
+           </div> -->
         </section>
         <!--Section collection-->
         <section class="collection">
-            <h2>New collection</h2>
+            <div class="container">
+                <h3>New collection</h3>
             <ul>
                 <li class="features">
                     <a href="">
@@ -73,12 +86,15 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--Footer-->
     <footer>
-        <p>All Rights Reserved © Dokan | Designed</p>
-        <p>ThemenGraph</p>
+        <div class="container">
+            <p>All Rights Reserved © Dokan | Designed</p>
+            <p>ThemenGraph</p>
+        </div>
     </footer>
     </body>
 </html>
