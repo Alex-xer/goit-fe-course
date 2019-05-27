@@ -8,16 +8,16 @@
     margin: 0 auto;
 }
 /* Menu */
-.page-header{
-    height: 90px;
-    padding: 38px 245px 32px 245px;
+.container{
+    width: 1110px;
+    margin: 0, auto;
+    /* height: 90px;
+    padding: 38px 245px 32px 245px; */
 }
 .logo{
-    width: 60%;
     float: left;
 }
 .nav{
-    width: 40%;
     float: right;
     padding-top: 5px;
     list-style: none;
@@ -50,10 +50,10 @@ nav a:focus{
     color: #1abc9c;
 }
 /* Sectio slider */
-.slider{
+.slider>img{
     position: relative;
 }
-.arrow{
+/* .arrow{
     width: 1110px;
     position: absolute;
     left: 245px;
@@ -62,38 +62,30 @@ nav a:focus{
 }
 .arrow>li{
     display: inline-block;
-}
+} */
 .button{
+    display: inline-block;
     width: 104px;
     height: 104px;
     background-color:#70bca9;
+    border: none;
+    position: absolute;
+    transform: translateY(-50%);
 }
-.left{
-    float: left;
+.button-left{
+    left: 245px;
     position: relative;
 }  
-.left>img{
+.button-right{
+    right: 245px;
+    position: relative;
+}
+.button-left>img, .button-right>img{
     position: absolute;
     top: 50%;
     left: 50%;
     color: rgb(255, 255, 255);
     transform: translate(-50%, -50%);
-}  
- .right{
-    float: right;
-    position: relative;
-}
-.right>img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: rgb(255, 255, 255);
-    transform: translate(-50%, -50%);
-}
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 .left:hover, .right:hover{
     background: #1abc9c;
@@ -102,28 +94,36 @@ nav a:focus{
 .slider-description{
     display: inline-block;
     font-family: "Roboto", sans-serif;
-    width: 902px;
+    width: 766px;
     color: white;
     text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
   }
 .slider-description>h2{
-    font-family: "Roboto black", sans-serif;
     font-size: 60px;
-    padding-left: 65px;
     font-weight: 900;
     line-height: 82px;
 }
 .slider-description>p{
-    padding-left: 80px;
     font-size: 24px;
     font-weight: 300;
     line-height: 54px;
 }
+
+/* Section collection */
 .collection{
     font-family: "Roboto", sans-serif;
     background-color: #e9f0fd;
     padding-top: 94px;
-
+    position: relative;
+}
+.container{
+    position: absolute;
+    left: 245px;
+    top: 0px;
 }
 .container>h3{
 font-size: 48px;
@@ -140,25 +140,26 @@ text-transform: uppercase;
     background-color: #1abc9c;
     display: block;
     margin-top: 32px;
-    margin-left: 718px;
-    margin-bottom: 82px;
+    /* margin-left: 718px;
+    margin-bottom: 82px; */
 }
-.collection ul{
-    padding-left: 239px;
-    padding-right: 239px;
+.clearfix{
+    margin: 0;
+    padding: 0;
 }
 .features{
     display: inline-block;
     width: 255px;
     height: 322px;
     margin-bottom: 100px;
+    position: relative;
    
 
 }
 .features:not(:nth-child(4n)) {
     margin-right: 30px;
 }
- img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -186,12 +187,17 @@ text-transform: uppercase;
     position: absolute;
     right: 0;
 }
+
 /* Ikon */
 .activ-blok{
-    width: 255px;
+    width: 100%;
     height: 282px;
     border: 10px solid rgba(255, 255,255, 0.3);
-    position: relative;
+    position: absolute;
+}
+.activ-blok li{
+    display: inline-block;
+    text-decoration: none;
 }
 .hart-icon, .arrows-icon, .clock-icon{
     display: inline-block;
@@ -200,6 +206,9 @@ text-transform: uppercase;
     border: 1px solid white; 
     position: relative;
     margin-bottom: 4px;
+}
+.arrows-icon{
+    background-color: #1abc9c;
 }
 .hart-icon>img, .arrows-icon>img, .clock-icon>img{
     position: absolute;
@@ -211,6 +220,7 @@ text-transform: uppercase;
     display: inline-block;
     width: 166px;
     height: 50px;
+    background-color: #323232;
     border: 1px solid white; 
     position: relative;
 } 
@@ -232,6 +242,6 @@ text-transform: uppercase;
     line-height: 32px;
     font-weight: 400;
 }
-.activ-blok>a:nth-child(-n+2){
+.activ-blok>li:nth-child(-n+2){
     margin-right: 4px;
 }

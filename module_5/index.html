@@ -9,8 +9,8 @@
 </head>
 <body class="wraper">
     <!--menu-->
-    <header class="page-header clearfix">
-            <nav>
+    <header class="container">
+            <nav class=" clearfix">
                 <a href="" class="logo">
                 <img src="./img/mart.png" alt="logotip">
                 </a>
@@ -29,8 +29,17 @@
         <!--Sectio slider-->
         <section class="slider">
             <img src="./img/slide4.png" alt="Happy girls">
-           
-           <ul class="arrow clearfix">
+           <button class="button-left">
+            <img src="./img/left arrow.png" alt=" left arrow">
+           </button>
+           <div class="slider-description">
+               <h2>Affordable paris tours</h2>
+                <p>City tours/tour tickets/tour guides</p>
+           </div>
+           <button class="button-right">
+                <img src="./img/right arrow.png" alt="right arrow">
+            </button>
+           <!-- <ul class="arrow clearfix">
                <li class="left button">
                    <img src="./img/left arrow.png" alt=" left arrow">
                </li>
@@ -41,14 +50,39 @@
                <li class="right button">
                 <img src="./img/right arrow.png" alt="right arrow">
                </li>
-           </ul>
+           </ul> -->
         </section>
         <!--Section collection-->
         <section class="collection">
             <div class="container">
                 <h3>New collection</h3>
-            <ul>
+            <ul class="clearfix">
                 <li class="features">
+                        <div class="activ-blok">
+                                <ul>
+                                        <li>
+                                            <button  class="hart-icon">
+                                                    <img src="./img/ikon/hart.png" alt="hart">
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="arrows-icon">
+                                                    <img src="./img/ikon/arrows.png" alt="arrows">
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="clock-icon">
+                                                   <img src="./img/ikon/clock.png" alt="clock">
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="cart-icon">
+                                                    <img src="./img/ikon/cart.png" alt="cart">
+                                                    <p>Add to cart</p>
+                                            </button>
+                                        </li>
+                                    </ul>
+                           </div>
                     <a href="">
                        <img src="./img/Rectangle 50.png"  class="img" alt="Blue tshirt">
                        <div>
@@ -56,9 +90,10 @@
                         <p class="prise">$26</p>
                        </div>
                     </a>
+                    <!--Activ blok-->
+                   
                 </li>
-                <!--Activ blok-->
-                <div class="activ-blok">
+                <!-- <div class="activ-blok">
                     <a href="" class="hart-icon" >
                         <img src="./img/ikon/hart.png" alt="hart">
                     </a>
@@ -72,8 +107,9 @@
                         <img src="./img/ikon/cart.png" alt="cart">
                         <p>Add to cart</p>
                     </a>
-                </div>
-    
+                </div> -->
+                
+                   
                 <li class="features">
                     <a href="">
                         <img src="./img/Rectangle 51.png" alt="Woman shirt">
@@ -107,7 +143,7 @@
     </main>
     <!--Footer-->
     <footer>
-        <div class="container">
+        <div class="footer">
             <p>All Rights Reserved © Dokan | Designed</p>
             <p>ThemenGraph</p>
         </div>
