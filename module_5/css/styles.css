@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: solid 1px red;
 }
 .wraper{
     width: 1600px;
+    height: auto;
     margin: 0 auto;
 }
 /* Menu */
 .container{
+    display: block;
     width: 1110px;
-    margin: 0, auto;
+    padding-top: 38px;
+    padding-bottom: 32px;
+    /* margin: 0, auto; */
     /* height: 90px;
     padding: 38px 245px 32px 245px; */
 }
@@ -23,6 +28,11 @@
     list-style: none;
     text-align: center;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 nav li{
     float: left;
 }
@@ -50,9 +60,14 @@ nav a:focus{
     color: #1abc9c;
 }
 /* Sectio slider */
-.slider>img{
-    position: relative;
+
+.slider{
+    width: 100%;
+    display: block;
 }
+/* .slider>img{
+    position: relative;
+} */
 /* .arrow{
     width: 1110px;
     position: absolute;
