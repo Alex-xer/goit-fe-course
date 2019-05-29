@@ -16,7 +16,7 @@
     padding-bottom: 32px;
     position: relative;
 }
-.nav{
+.clearfix{
     display: inline-block;
     width: 1110px;
     position: absolute;
@@ -166,7 +166,6 @@ position: relative;
 
 .features{
     float: left;
-    display: inline-block;
     width: 255px;
     height: 322px;
     margin-bottom: 100px;
