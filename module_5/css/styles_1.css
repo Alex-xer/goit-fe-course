@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 .wraper{
     margin: 0 auto;
@@ -214,7 +214,7 @@ max-width: 100%;
 /*---------------Active blok--------------*/
 .active-blok{
     width: 255px;
-    height: 282px;
+    height: 322px;
     border: 10px solid rgba(255, 255,255, 1);
     position: absolute;
     opacity: 0;
@@ -243,7 +243,7 @@ max-width: 100%;
 }
 .features:hover .arrows-icon{
     background-color: #1abc9c;
-    opacity: 1;
+    cursor: pointer;
 }
 .hart-icon>img, .arrows-icon>img, .clock-icon>img{
     position: absolute;
@@ -252,10 +252,9 @@ max-width: 100%;
     transform: translate(-50%, -50%);
 }
 .cart-icon{
-   
     width: 166px;
     height: 50px;
-    background-color: #323232;
+    
     border: 1px solid white; 
     position: relative;
 } 
@@ -276,6 +275,10 @@ max-width: 100%;
     font-size: 14px;
     line-height: 32px;
     font-weight: 400;
+}
+.features:hover .cart-icon{
+   background-color: #323232;
+   cursor: pointer;
 }
 
 /* Footer */
