@@ -182,42 +182,52 @@ max-width: 100%;
     font-weight: 900;
     color: white;
     text-transform: uppercase;
-    position: relative;
+    /* position: relative; */
 } 
 .product{
     width: 200px;
     padding-left: 12px;
     background-color: #323232;
-    position: absolute;
-    left: 0;
+    float: left;
 }
 .prise{
     width: 55px;
     padding-left: 12px;
     background-color: #8c8c8c;
-    position: absolute;
-    right: 0;
+    float: right;
 }
-.features a:hover .product{ 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.features:hover .product{ 
     background-color: #1abc9c;
  }
- .features a:hover .prise{
+ .features:hover .prise{
     background-color: #7fd9c7;
+}
+
+.features:hover .active-blok{
+    background-color: #737373;
 }
 /*---------------Active blok--------------*/
 .active-blok{
-    width: 100%;
+    width: 255px;
     height: 282px;
-    border: 10px solid rgba(255, 255,255, 0.3);
+    border: 10px solid rgba(255, 255,255, 1);
     position: absolute;
-}
-.active-blok>ul{
-    padding-top: 80px 34px 75px 34px;
+    opacity: 0;
 }
 .active-blok li{
     display: inline-block;
     list-style: none;
- 
+}
+.active-blok li :nth-child(-n+2){
+    margin-right: 3px;
+}
+.active-blok>ul{
+    padding: 80px 32px 75px 32px;
 }
 .hart-icon, .arrows-icon, .clock-icon{
     text-align: center;
@@ -227,8 +237,13 @@ max-width: 100%;
     position: relative;
     margin-bottom: 4px;
 }
-.arrows-icon{
+.features:hover .active-blok{
+    opacity:  0.549;
+    cursor: pointer;
+}
+.features:hover .arrows-icon{
     background-color: #1abc9c;
+    opacity: 1;
 }
 .hart-icon>img, .arrows-icon>img, .clock-icon>img{
     position: absolute;
@@ -261,9 +276,6 @@ max-width: 100%;
     font-size: 14px;
     line-height: 32px;
     font-weight: 400;
-}
-.active-blok>li:nth-child(-n+2){
-    margin-right: 4px;
 }
 
 /* Footer */
