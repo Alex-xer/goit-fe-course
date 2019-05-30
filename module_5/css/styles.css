@@ -252,9 +252,9 @@ nav a:focus{
     background-repeat: no-repeat;
 }
 .features:hover .active-blok{
-    opacity:  0.549;
+    opacity: 1;
     cursor: pointer;
-    border: 10px solid rgba(255, 255, 255, 0.7);
+    border: 10px solid rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.549);
 }
 .hart-icon{
