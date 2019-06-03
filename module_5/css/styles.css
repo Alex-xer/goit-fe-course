@@ -260,16 +260,16 @@ nav a:focus{
     background-color: rgba(0, 0, 0, 0.549);
 }
 .hart-icon{
-    background-image: url(/module_5/img/ikon/hart.png);
+    background-image: url(../img/ikon/hart.png);
 }
 .arrows-icon{
-    background-image: url(/module_5/img/ikon/arrows.png);
+    background-image: url(../img/ikon/arrows.png);
 }
 .clock-icon{
-    background-image: url(/module_5/img/ikon/clock.png);
+    background-image: url(../img/ikon/clock.png);
 }
 .cart-icon{
-    background-image: url(/module_5/img/ikon/add\ to\ cart.png);
+    background-image: url(../img/ikon/add\ to\ cart.png);
 }
 .hart-icon:hover, .arrows-icon:hover, .clock-icon:hover{
     background-color: #1abc9c;
