@@ -4,7 +4,7 @@
     box-sizing: border-box;
     outline: solid 1px red; 
 }
-.wrapper{
+.wraper{
     width: 1200px;
     margin: 0 auto;
 }
@@ -64,6 +64,12 @@
     opacity: 1;
 }
 /* Title */
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .pretitle{
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
@@ -79,7 +85,33 @@
     text-transform: uppercase;
 
 }
+.title::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 70px;
+    margin-left: -200px;
+}
 .pretitle, .title{
     display: flex;
     justify-content: center;
+}
+.conteiner{
+    display: flex;
+    margin-top: 66px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 94px;
+}
+.blok{
+    width: 400px;
+    display: flex;
+   /*  justify-content: space-around; */
+}
+.blok div{
+    width: 300px;
+}
+.blok img{
+    background-size: cover;
 }
