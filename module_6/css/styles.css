@@ -67,8 +67,7 @@
 .service{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 .pretitle{
     font-family: 'Kaushan Script', cursive;
@@ -83,19 +82,12 @@
     font-size: 30px;
     color: #333333;
     text-transform: uppercase;
-
+    margin-bottom: 40px;
 }
-.title::after{
-    content: "";
+.line{
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin-top: 70px;
-    margin-left: -200px;
-}
-.pretitle, .title{
-    display: flex;
-    justify-content: center;
 }
 .conteiner{
     display: flex;
@@ -111,7 +103,4 @@
 }
 .blok div{
     width: 300px;
-}
-.blok img{
-    background-size: cover;
 }
