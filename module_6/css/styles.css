@@ -165,7 +165,7 @@
     display: flex;
     flex-direction: column;
 }
-.active-blok{
+.activeblok{
     width: 380px;
     height: 470px;
     background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
@@ -180,7 +180,7 @@
     justify-content: center;
     align-items: center;
 }
-.active-blok ul{
+.activeblok ul{
     display: flex;
     list-style: none;
 
@@ -218,6 +218,9 @@
     text-align: center;
     font-weight: 300;
     margin-bottom: 80px;
+}
+.blok:hover {
+
 }
 /* Footer */
 .underline{
