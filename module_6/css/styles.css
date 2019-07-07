@@ -152,6 +152,7 @@
     text-align: center;
     margin-bottom: 90px;
 }
+/* Section team */
 .boxfeatures{
     width: 1200px;
     display: flex;
@@ -163,6 +164,48 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+}
+.active-blok{
+    width: 380px;
+    height: 470px;
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+
+    background-color: rgba(0, 0, 0, 0.549);
+    position: absolute;
+
+   
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active-blok ul{
+    display: flex;
+    list-style: none;
+
+}  
+
+.facebook-icon, .twitter-icon, .pinterest-icon, .instagram-icon{
+    width: 55px;
+    height: 55px;
+    border: 1px solid;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #fce38a;
+    
+}
+.facebook-icon{
+    background-image: url(../img/feature_icon/facebook.png);
+}
+.twitter-icon{
+    background-image: url(../img/feature_icon/twitter.png);
+}
+.pinterest-icon{
+    background-image: url(../img/feature_icon/pinterest.png);
+}
+.instagram-icon{
+    background-image: url(../img/feature_icon/instagram.png);
 }
 .features img{
     max-width: 100%;
@@ -176,6 +219,7 @@
     font-weight: 300;
     margin-bottom: 80px;
 }
+/* Footer */
 .underline{
     width: 1200px;
     height: 1px;
