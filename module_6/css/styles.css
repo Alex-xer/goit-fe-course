@@ -219,8 +219,10 @@
     font-weight: 300;
     margin-bottom: 80px;
 }
-.blok:hover {
-
+.blok:hover .activeblok{
+position: relative;
+left: -10px;
+top: -10px;
 }
 /* Footer */
 .underline{
