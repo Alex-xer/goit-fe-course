@@ -8,6 +8,7 @@
     width: 1200px;
     margin: 0 auto;
 }
+/* Menu */
 .menu{
     margin-bottom: 130px;
     width: 1200px;
@@ -63,7 +64,8 @@
     transition-duration: 0.2s;
     opacity: 1;
 }
-/* Title */
+                                          /* Title */
+/* Section service */
 .service, .team{
     display: flex;
     flex-direction: column;
@@ -164,11 +166,16 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     /* position: absolute; */
+=======
+    position: relative;
+>>>>>>> 4de13cbbb8fa80cc3f24286ab1424fda883bbd27
 }
 .activeblok{
     width: 380px;
     height: 470px;
+<<<<<<< HEAD
     background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
 
@@ -178,6 +185,14 @@
     bottom: 10px; */
    
     opacity: 0.5;
+=======
+    background-image: linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+    position: absolute;
+    left:-10px;
+    top:-10px;
+    z-index: 2;
+    opacity: 0;
+>>>>>>> 4de13cbbb8fa80cc3f24286ab1424fda883bbd27
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,10 +200,12 @@
 .activeblok ul{
     display: flex;
     list-style: none;
+<<<<<<< HEAD
     justify-content: center;
 
+=======
+>>>>>>> 4de13cbbb8fa80cc3f24286ab1424fda883bbd27
 }  
-
 .facebook-icon, .twitter-icon, .pinterest-icon, .instagram-icon{
     width: 55px;
     height: 55px;
@@ -196,7 +213,6 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #fce38a;
-    
 }
 .facebook-icon{
     background-image: url(../img/feature_icon/facebook.png);
@@ -222,19 +238,36 @@
     font-weight: 300;
     margin-bottom: 80px;
 }
+<<<<<<< HEAD
 /* .blok:hover .activeblok{
 .features:hover .activeblok{
+=======
+ .features:hover .img{
+>>>>>>> 4de13cbbb8fa80cc3f24286ab1424fda883bbd27
     position: relative;
     left: -10px;
     top: -10px;
-    opacity: 1;
-
+    z-index: 2;
 }
+<<<<<<< HEAD
 .blok:hover .activeblok{
 position: relative;
 left: -10px;
 top: -10px;
 } */
+=======
+.features:hover .activeblok{
+    z-index: 3;
+    transition-duration: 0.2s;
+    opacity:0.85 ;
+}
+.facebook-icon:hover, .twitter-icon:hover, .pinterest-icon:hover, .instagram-icon:hover{
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    background-color: #95e1d3;
+}
+
+>>>>>>> 4de13cbbb8fa80cc3f24286ab1424fda883bbd27
 /* Footer */
 .underline{
     width: 1200px;
