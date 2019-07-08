@@ -164,6 +164,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    /* position: absolute; */
 }
 .activeblok{
     width: 380px;
@@ -172,8 +173,9 @@
     background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
 
     background-color: rgba(0, 0, 0, 0.549);
-    position: absolute;
-
+ /*    position: relative;
+    right: 10px;
+    bottom: 10px; */
    
     opacity: 0.5;
     display: flex;
@@ -183,6 +185,7 @@
 .activeblok ul{
     display: flex;
     list-style: none;
+    justify-content: center;
 
 }  
 
@@ -219,11 +222,11 @@
     font-weight: 300;
     margin-bottom: 80px;
 }
-.blok:hover .activeblok{
+/* .blok:hover .activeblok{
 position: relative;
 left: -10px;
 top: -10px;
-}
+} */
 /* Footer */
 .underline{
     width: 1200px;
