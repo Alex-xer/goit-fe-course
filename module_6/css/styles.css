@@ -223,6 +223,14 @@
     margin-bottom: 80px;
 }
 /* .blok:hover .activeblok{
+.features:hover .activeblok{
+    position: relative;
+    left: -10px;
+    top: -10px;
+    opacity: 1;
+
+}
+.blok:hover .activeblok{
 position: relative;
 left: -10px;
 top: -10px;
