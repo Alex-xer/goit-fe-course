@@ -164,7 +164,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-}
+}/* 11111111111111111111111111111111111111 */
 .activeblok{
     width: 380px;
     height: 470px;
@@ -218,7 +218,7 @@
     text-align: center;
     font-weight: 300;
     margin-bottom: 80px;
-}
+}/* 1111111111111111111111111111111111 */
 .features:hover .activeblok{
     position: relative;
     left: -10px;
