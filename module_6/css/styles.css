@@ -10,13 +10,13 @@
 }
 /* Menu */
 .menu{
-    margin-bottom: 130px;
     width: 1200px;
     margin: 0 auto;
+    padding-top: 28px;
     padding-bottom: 112px;
 }
 .navigation{
-    min-height: 80px;
+    min-height: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,11 +34,11 @@
     justify-content: space-between;
     list-style: none;
     align-items: flex-end;
+    padding-top: 18px;
 }
 .nav li{
     display: flex;
     align-items: flex-end;
-    margin-top: 26px;
 }
 .nav a{
     text-decoration: none;
@@ -105,12 +105,6 @@
      margin-top: 40px;
      
 }
-/* .line{
-    width: 60px;
-    height: 3px;
-    background-color: #f38181;
-    margin-bottom: 66px;
-} */
 .conteiner{
     display: flex;
     flex-wrap: wrap;
