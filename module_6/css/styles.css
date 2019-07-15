@@ -243,7 +243,7 @@
 .features:hover .activeblok{
     z-index: 3;
     transition-duration: 0.2s;
-    opacity:0.85 ;
+    opacity:1 ;
     box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
 }
 .facebook-icon:hover, .twitter-icon:hover, .pinterest-icon:hover, .instagram-icon:hover{
