@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.wraper{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+table{
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid  #444444;
+    padding: 12px;
+    text-align: center;
+}
+caption{
+    padding-bottom: 26px;
+    text-align: center;
+    font-size: 24px;
+}
+table th{
+    background-color: #444444;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.name{
+text-transform: uppercase;
+}
+table tr  td:nth-child(2):after{
+    content: " грн";
+}
