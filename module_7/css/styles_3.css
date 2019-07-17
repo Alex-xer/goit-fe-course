@@ -1,0 +1,38 @@
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 476px;
+    padding: 34px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0, .1);
+    margin: 50px auto;
+}
+input{
+    width: 100%;
+    height: 56px;
+    margin: 0 0 30px;
+    padding: 20px;
+}
+textarea{
+    width: 100%;
+    height: 222px;
+    padding: 20px;
+    margin: 0 0 30px;
+}
+textarea::placeholder, input::placeholder, button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+button{
+    padding: 16px 54px;
+    background-color: #e76262;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+}
