@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1400px;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 122px;
+}
+.navigation{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.logo{
+    text-decoration: none;
+}
+.nav{
+    width: 486px;
+    display: flex;
+    justify-content: space-between;
+   list-style: none;
+   text-decoration: none;
+}
+.nav a{
+    text-decoration: none;
+}
+section, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 76px;
+    padding-bottom: 116px;
+}
+.title, .contact{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.item{
+    text-align: center;
+    list-style: none;
+}
+footer{
+    background-image: url(../img/Map\ Image.png);
+    min-height: 680px;
+}
+footer>h2{
+    color:  white;
+    padding-top: 110px;
+}
+footer>p, section>p{
+    color: #777777;
+}
+form{
+    width: 940px;
+    padding-top: 74px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+form>p{
+    display: flex;
+    flex-direction: column;
+  
+}
+input, textarea{
+    width: 455px;
+}
+textarea{
+    min-height: 212px;
+}
+input:not(:last-child){
+    margin-bottom: 28px;
+}
+input{
+    min-height: 52px;
+}
+button {
+    padding: 24px 48px;
+    background-color: #fed136;
+}
+input, textarea, button{
+    border-radius: 2px;
+    border: 0;
+ 
+}
