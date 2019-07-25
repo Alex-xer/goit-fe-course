@@ -79,7 +79,6 @@ section{
     display: flex;
     justify-content: space-between;
     padding-top: 76px;
-    /* padding-bottom: 116px; */
     width: 940px;
 }
 .item{
@@ -123,9 +122,9 @@ section{
     line-height: 1.5;
     text-align: center;
 }
+/* Footer */
 .section{
     background-image: url(../img/Map\ Image.png);
-    /* min-height: 680px; */
 }
 .contact{
     color:  #ffffff;
@@ -163,7 +162,7 @@ input, textarea{
     width: 455px;
     padding: 18px 20px;
     text-transform: uppercase;
-    font-size: 14px;
+   
 }
 textarea{
     min-height: 100%;
@@ -197,4 +196,9 @@ input, textarea, button{
 .left input[name='email']:invalid,
 .right textarea[name='comments']:invalid{
 outline-color: red;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #777777;
+    font-size: 14px;
 }
