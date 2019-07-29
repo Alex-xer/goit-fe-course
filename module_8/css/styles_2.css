@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    max-width: 486px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.section{
+    display: flex;
+    height: 236px;
+    font-size: 20px;
+    color: #202917;
+}
+.content{
+    width: 76.54320987654321%;
+    background-color:#f8e81d;
+}
+.sidebar{
+    width: 23.45679012345679%;
+    background-color:#b8e986;
+}
+ul>li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
