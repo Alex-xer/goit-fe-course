@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: solid 1px red; */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    min-width: 320px;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.box{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background-image: url(../img/slaider.png);
+}
+.login{
+    width: 90px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    color: #ffffff;
+}
