@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+}
+@font-face{
+    font-family: "Wisdom Script";
+    src: url(../fonts/WisdomScriptAJ.woff) format(woff);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Droid serif";
+    src: url(../fonts/Droidserif/DroidSerif-Italic.woff) format(woff),
+          url(../fonts/Droidserif/DroidSerif-Italic.woff2) format(woff2);
+    font-weight: italic;
+}
+body{
+    width: 1400px;
+    margin: 0 auto;
+}
+/* Menu */
+.wrapper{
+    margin: 0 auto;
+    padding-top: 42px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 122px;
+}
+.navigation{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.logo{
+    text-decoration: none;
+    font-family: "Wisdom Script", sans-serif;
+    color: #fed136;
+    font-size: 26px;
+}
+.nav{
+    min-width: 486px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    align-items: flex-end;
+}
+.nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #222222;
+}
+.nav a:hover{
+    color: #fed136;
+}
+/* Title */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servic{
+    margin-bottom: 116px;
+}
+.title, .contact{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+.title{
+    color: #222222;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 76px;
+    width: 940px;
+}
+.item{
+    text-align: center;
+    list-style: none;
+    width: 290px;
+}
+.nav a, .title, .contact{
+    font-family: 'Montserrat', sans-serif;
+}
+.item>ul{
+    display: flex;
+    justify-content: center;
+}
+.item li{
+    width: 72px;
+    height: 72px;
+    list-style: none;
+    background-repeat: no-repeat;
+    margin-bottom: 22px;
+}
+.basket{
+    background-image: url(../img/icon/Icon-Basket.png);
+}
+.laptop{
+    background-image: url(../img/icon/Icon-Laptop.png);
+}
+.locked{
+    background-image: url(../img/icon/Icon-Locked.png);
+}
+.item>h3{
+    margin-bottom: 12px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.item>p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+/* Footer */
+.section{
+    background-image: url(../img/Map\ Image.png);
+}
+.contact{
+    color:  #ffffff;
+    padding-top: 110px;
+}
+ section>p{
+    color: #777777;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Droid serif", sans-serif;
+    font-style: italic;
+    line-height: 1.2;
+}
+form{
+    width: 940px;
+    padding-top: 76px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 114px;
+}
+form>ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.left, .right{
+    list-style: none;
+}
+input, textarea{
+    width: 455px;
+    padding: 18px 20px;
+    text-transform: uppercase;
+}
+textarea{
+    min-height: 100%;
+}
+input:not(:last-child){
+    margin-bottom: 28px;
+}
+input{
+    min-height: 52px;
+}
+button {
+    margin: 0 auto;
+    padding: 24px 46px;
+    background-color: #fed136;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+}
+input, textarea, button{
+    border-radius: 2px;
+    border: 0;
+    font-weight: 700;
+    font-family:  'Montserrat', sans-serif;
+}
+.left input[name="name"]:valid,
+.left input[name='email']:valid,
+.right textarea[name='comments']:valid{
+    outline-color:  green; 
+}
+.left input[name="name"]:invalid,
+.left input[name='email']:invalid,
+.right textarea[name='comments']:invalid{
+outline-color: red;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #777777;
+    font-size: 14px;
+}
