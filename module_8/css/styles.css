@@ -2,39 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-.container{
+header{
     min-width: 320px;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 120px;
     background-repeat: no-repeat;
-}
-.box{
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
     background-image: url(../img/slaider.png);
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
 }
-.login{
+.container{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.input{
+    margin-bottom: 115px;
+}
+.input a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.input button{
     width: 90px;
     height: 36px;
     border: 2px solid #ffffff;
     border-radius: 18px;
     color: #ffffff;
 }
-header{
-    margin-bottom: 120px;
+.input a, .input button{
+    font-size: 14px;
 }
-h3{
-    font-family: "Myriad Pro";
-    /* font-family: 'Roboto', sans-serif; */
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 400;
+.input a, .input button, h1 a,  section button{
+    font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 30px;
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+h1 a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+h1{
+    margin-bottom: 32px;
+}
+section h2{
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+section p{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+section button{
+    font-size: 14px;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 78, 80);
+    margin-bottom: 138px;
 }
