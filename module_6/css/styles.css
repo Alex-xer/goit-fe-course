@@ -120,6 +120,7 @@
 }
 .icon_alarm, .icon_graph, .icon_computer, .icon_book, .icon_home, .icon_image{
     width: 100px;
+        height: auto;
     background-position: 50% 0%;
     background-repeat: no-repeat;
 }
