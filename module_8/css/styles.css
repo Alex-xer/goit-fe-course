@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: solid 1px red; */
+    outline: solid 1px red;
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 .container{
     min-width: 320px;
-    max-width: 768px;
+    max-width: 767px;
     margin: 0 auto;
     text-align: center;
 }
@@ -34,6 +34,7 @@ header{
     text-decoration: none;
     color: #ffffff;
     padding: 8px;
+    display: block;
 }
 .input button{
     width: 90px;
@@ -47,7 +48,7 @@ header{
 .input a, .input button, .button{
     font-size: 14px;
 }
-.input a, .input button, h1 a, header h2, .button{
+.input a, .input button, h1 a, header h2, .button, main h3{
     font-weight: bold;
     line-height: 1.2;
     font-family: "Montserrat";
@@ -57,8 +58,9 @@ h1 a{
     text-decoration: none;
     font-size: 20px;
     display: block;
+    text-transform: uppercase;
 }
-h1{
+.for_devices{
     margin-bottom: 32px;
 }
 header h2{
@@ -85,13 +87,15 @@ header p{
 /* Main */
 main{
     width: 100%;
-    color: #333333;
-    padding: 0px 48px 0px 48px;
+    color: #333333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-main>h3, .list-item>h4, .list-item>p, footer>button{
-    font-family: 'Myriad Pro', sans-serif;
-    line-height: 1.2;
-    font-weight: 400;
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main>h3{
     font-size: 22px;
@@ -99,6 +103,7 @@ main>h3{
     margin-bottom: 18px;
 }
 .list-item{
+    width: 73.75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,10 +181,16 @@ margin-bottom: 14px;
     color: #333333;
     font-size: 14px;
     margin-bottom: 16px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
 }
 .list-item p{
     color: rgb(102, 102, 102);
-    font-size: 14px;
+    font-size: 13.97px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
 }
 footer{
     padding: 0px 20px 0px 20px;
@@ -194,4 +205,83 @@ footer>button{
     font-size: 14px;
     color: #ff4e50;
     cursor: pointer;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Montserrat";
 } 
+@media screen and (min-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        background-image: url(../img/slaider_tablet.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 38px;
+    }
+    .for_devices{
+        width: 87.23958333333333%;
+        height: 36px;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 146px;
+    }
+    .input{
+        margin-bottom: 0px;
+    }
+    header h2{
+        width: 70.0625%;
+        font-size: 52px;
+        margin-bottom: 26px;
+    }
+    header p{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .button{
+        width: 29.42708333333333%;
+        margin-bottom: 234px;
+    }
+    main h3{
+        width: 52.60416666666667%;
+        margin-bottom: 30px;
+    }
+    .team{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 38px;
+    }
+    .list-item{
+        width: 30.72916666666667%;
+        height: auto;
+        margin: 0 2.604166666666667%; 
+        text-align: center;
+    }
+    .list-item:nth-child(1), .list-item:nth-child(3){
+        margin-bottom: 56px;
+    }
+    .list-item:nth-child(2){
+        order: 1;
+    }
+    .list-item:nth-child(4){
+        order: 1;
+    }
+    .list-itemm p{
+        font-size: 13.97px;
+        font-weight: 300px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .list-item h4{
+        font-weight: bold;
+        line-height: 1.2;
+        font-family: "Montserrat";
+    }
+    footer button{
+        width: 25%;
+    }
+}
