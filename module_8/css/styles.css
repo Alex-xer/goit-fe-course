@@ -37,7 +37,7 @@ header{
     display: block;
 }
 .log{
-    margin-right: 18px;
+    margin-right: 16px;
 }
 .sign{
     width: 90px;
@@ -51,7 +51,7 @@ header{
 .input a, .sign, .button{
     font-size: 14px;
 }
-.input a, .sign, h1 a, .container h2, p, .button, main h3{
+.input a, .sign, h1 a, header h2, p, .button, main h3{
     font-weight: bold;
     line-height: 1.2;
     font-family: "Montserrat";
@@ -226,8 +226,58 @@ footer>button{
     line-height: 1.2;
     font-family: "Montserrat";
 } 
-@media(max-width:748px){
+@media(min-width:320px) and (max-width:768px){
 
+header{
+    background-image: url(../img/slaider_tablet.png);
+    height: auto;
+    max-width: 100%;
+}
+.container{
+    width: 768px;
+    padding: 38px 44px 0px;
+}
+.navigation{
+    margin:0 auto;
+    width: 660px;
+    height: 36px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 146px;
+}
+h1 {
+   margin: 0;
+   width: 200px;
+   align-items: center;
+}
+.input{
+    margin: 0;
+    width: 168px;
+    height: 36px;
+    justify-content: space-between;
+}
+header h2{
+    margin: 0 auto;
+    width: 504px;
+    font-size: 51.97px;
+    margin-bottom: 26px;
+    
+}
+.ground{
+    width: 404px;
+    margin: 0 auto;
+}
+.ground p{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.button{
+    width: 226px;
+    font-size: 13.99px;
+    margin-bottom: 234px;
+}
 }
 /* @media (min-width: 748px) and (max-width:960px){
 }
