@@ -1,0 +1,13 @@
+.content, .sidebar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.content{
+    background: #e6db74;
+}
+.sidebar{
+    background: #b0e674;
+}
