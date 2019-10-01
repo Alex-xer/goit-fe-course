@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid 1px red;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+header{
+    min-height: 542px;
+    display: block; 
+    background-repeat: no-repeat;
+    background-image: url(../img/slaider.png);
+    color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 66px;
+}
+.container{
+    width: 320px;
+    text-align: center;
+}
+.navigation{
+    width: 180px;
+    margin: 0 auto;
+}
+.input{
+    margin: 0 auto;
+    width: 154px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 112px;
+}
+.input a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7px;
+}
+.log, .sign, .button{
+    font-size: 14px;
+    cursor: pointer;
+}
+.sign{
+    width: 90px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    color: #ffffff;
+    background-color: transparent;
+
+}
+.log, .sign, h1 a, header h2,  .button, main h3{
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+h1 a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+nav{
+    margin-bottom: 32px;
+}
+.container>h2{
+    width: 280px;
+    margin: 0 auto;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+header p{
+    width: 220px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+.button{
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 78, 80);
+}
+/* Main */

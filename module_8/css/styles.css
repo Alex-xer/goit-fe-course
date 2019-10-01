@@ -18,8 +18,9 @@ header{
     background-position: center;
 }
 .container{
+    margin: 0 auto;
     width: 320px;
-    padding: 20px 20px 0px 20px;
+   
     text-align: center;
     /* background-image: url(../img/slaider.png); */
     background-repeat: no-repeat;
@@ -133,7 +134,7 @@ img{
     content: " ";
     width: 40px;
     height: 40px;
-    background-image: url(../img/icon/321.jpg);
+    background-image: url(../img/icon/icon.png); 
 }
 /* .foto-mustache{
     background-image: url(../img/foto/Layer\ 6.png);
@@ -226,7 +227,7 @@ footer>button{
     line-height: 1.2;
     font-family: "Montserrat";
 } 
-@media(min-width:320px) and (max-width:768px){
+@media(min-width:320px){
 
 header{
     background-image: url(../img/slaider_tablet.png);
