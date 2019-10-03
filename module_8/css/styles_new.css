@@ -8,7 +8,7 @@
 }
 /* Header */
 header{
-    min-height: 542px;
+    min-height: 540px;
     display: block; 
     background-repeat: no-repeat;
     background-image: url(../img/slaider.png);
@@ -17,6 +17,7 @@ header{
     margin-bottom: 66px;
 }
 .container{
+    margin:0 auto;
     width: 320px;
     text-align: center;
 }
@@ -49,7 +50,7 @@ header{
     background-color: transparent;
 
 }
-.log, .sign, h1 a, header h2,  .button, main h3{
+.log, .sign, h1 a, header h2,  .button, h3{
     font-weight: bold;
     line-height: 1.2;
     font-family: "Montserrat";
@@ -88,3 +89,94 @@ header p{
     background-color: rgb(255, 78, 80);
 }
 /* Main */
+h3{
+    font-size: 21.98px;
+    color: #333333;
+    margin-bottom: 14px;
+}
+.list-item{
+    margin: 0 auto;
+    width: 216px;
+    color: #333333;
+    list-style: none;
+}
+.list-item:nth-child(-n+3){
+    margin-bottom: 28px;
+}
+.foto{
+background-repeat: no-repeat;
+margin: 0 auto;
+width: 122px;
+height: 122px;
+text-align: center;
+margin-bottom: 14px;
+}
+img{
+    display: block;
+    width: 122px;
+    height: 122px;
+}
+.one::after, .two::after, .three::after, .four::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px; 
+    position: relative;
+    right: -82px;
+    top: -40px;
+    cursor: pointer;
+}
+.one::after{
+    background-image: url(../img/icon/tv.png);
+}
+.two::after{
+    background-image: url(../img/icon/bottle.png);
+}
+.three::after{
+    background-image: url(../img/icon/cup.png);
+}
+.four::after{
+    background-image: url(../img/icon/airplane.png);
+}
+.list-item h4{
+    color: #333333;
+    font-size: 13.97px;
+    margin-bottom: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.list-item p{
+    color: rgb(102, 102, 102);
+    font-size: 13.97px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
+main{
+    margin-bottom: 28px;
+}
+/* Footer */
+footer button{
+    width: 280px;
+    height: 40px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-bottom: 56px;
+    font-size: 14px;
+    color: #ff4e50;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Montserrat";
+} 
+.list-item:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+/* @Media */
+@media(min-width: 848px){    
+header{
+    background-image: url(../img/slaider_tablet.png);
+    min-height: 700px;
+}

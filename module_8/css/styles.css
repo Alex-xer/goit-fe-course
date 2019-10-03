@@ -10,7 +10,6 @@
 header{
     height: auto;
     display: block;
-    /* padding: 20px 20px 0px 20px; */
     margin-bottom: 48px;
     background-repeat: no-repeat;
     background-image: url(../img/slaider.png);
@@ -20,9 +19,7 @@ header{
 .container{
     margin: 0 auto;
     width: 320px;
-   
     text-align: center;
-    /* background-image: url(../img/slaider.png); */
     background-repeat: no-repeat;
 }
 .input{
@@ -132,9 +129,11 @@ img{
 }
 .foto-mustache::after{
     content: " ";
+    display: block;
     width: 40px;
     height: 40px;
     background-image: url(../img/icon/icon.png); 
+    position: absolute;
 }
 /* .foto-mustache{
     background-image: url(../img/foto/Layer\ 6.png);
