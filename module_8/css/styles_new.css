@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
@@ -88,6 +88,7 @@ header p{
     border-radius: 20px;
     border: none;
     background-color: rgb(255, 78, 80);
+    margin-bottom: 138px;
 }
 /* Main */
 h3{
@@ -176,13 +177,13 @@ footer button{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 /* @Media */
+/* 320px */
 @media (min-width: 320px) {
     header{
         background-image: url(../img/slaider.png);
     }
 }
-
-
+/* 748px */
 @media (min-width: 748px) {    
 header{
     padding-top: 38px;
@@ -222,10 +223,57 @@ header{
     font-size: 13.99px;
     margin-bottom: 234px;
 }
+main h3{
+    margin-bottom: 32px;
 }
-
+.team{
+    width: 492px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 38px;
+}
+.list-item:nth-child(1), .list-item:nth-child(3){
+    margin-bottom: 56px;
+}
+.list-item:nth-child(2){
+    order: 1;
+    margin-bottom: 0px;
+}
+.list-item:nth-child(4){
+    order: 1;
+}
+.list-item h4{
+    margin-bottom: 12px;
+}
+footer button{
+    width: 192px;
+    font-size: 13.98px;
+    margin-bottom: 40px;
+}
+}
+/* 940px */
 @media (min-width: 940px) {    
     header{
         background-image: url(../img/slaider_desktop.png);
+    }
+    .container{
+        width: 940px;
+    }
+    .navigation{
+        width: 940px;
+    }
+    .team{
+        width: 940px;
+        margin-bottom: 34px;
+    }
+    .list-item:nth-child(1), .list-item:nth-child(3){
+        margin-bottom: 0;
+    }
+    footer button{
+        margin-bottom: 72px;
     }
     }
