@@ -8,10 +8,11 @@
 }
 /* Header */
 header{
-    min-height: 540px;
     display: block; 
+    height: auto;
     background-repeat: no-repeat;
-    background-image: url(../img/slaider.png);
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     padding-top: 20px;
     margin-bottom: 66px;
@@ -175,8 +176,56 @@ footer button{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 /* @Media */
-@media(min-width: 848px){    
-header{
-    background-image: url(../img/slaider_tablet.png);
-    min-height: 700px;
+@media (min-width: 320px) {
+    header{
+        background-image: url(../img/slaider.png);
+    }
 }
+
+
+@media (min-width: 748px) {    
+header{
+    padding-top: 38px;
+    background-image: url(../img/slaider_tablet.png);
+}
+.container{
+    margin:0 auto;
+    width: 748px;
+}
+.navigation{
+    width: 660px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 146px;
+}
+.input{
+    margin: 0;
+}
+.log{
+    margin-right: 3px;
+}
+.container>h2{
+    width: 504px;
+    font-size: 51.97px;
+    margin-bottom: 26px;
+}
+.container>p{
+    width: 404px;
+    font-size: 23.99px;
+    margin-bottom: 32px;
+}
+.button{
+    width: 226px;
+    font-size: 13.99px;
+    margin-bottom: 234px;
+}
+}
+
+@media (min-width: 940px) {    
+    header{
+        background-image: url(../img/slaider_desktop.png);
+    }
+    }
