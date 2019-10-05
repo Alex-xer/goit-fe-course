@@ -2,40 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
     font-family: 'Roboto', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 /* Header */
 header{
+    display: block; 
     height: auto;
-    display: block;
-    margin-bottom: 48px;
     background-repeat: no-repeat;
-    background-image: url(../img/slaider.png);
-    color: #ffffff;
+    background-size: cover;
     background-position: center;
+    color: #ffffff;
+    padding-top: 20px;
+    margin-bottom: 66px;
 }
 .container{
-    margin: 0 auto;
+    margin:0 auto;
     width: 320px;
     text-align: center;
-    background-repeat: no-repeat;
+}
+.navigation{
+    width: 180px;
+    margin: 0 auto;
 }
 .input{
+    margin: 0 auto;
+    width: 154px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 112px;
 }
 .input a{
     text-decoration: none;
     color: #ffffff;
-    padding: 8px;
-    display: block;
+    padding: 7px;
 }
-.log{
-    margin-right: 16px;
+.log, .sign, .button{
+    font-size: 14px;
+    cursor: pointer;
 }
 .sign{
     width: 90px;
@@ -44,12 +49,9 @@ header{
     border-radius: 18px;
     color: #ffffff;
     background-color: transparent;
-    cursor: pointer;
+
 }
-.input a, .sign, .button{
-    font-size: 14px;
-}
-.input a, .sign, h1 a, header h2, p, .button, main h3{
+.log, .sign, h1 a, header h2,  .button, h3{
     font-weight: bold;
     line-height: 1.2;
     font-family: "Montserrat";
@@ -61,15 +63,19 @@ h1 a{
     display: block;
     text-transform: uppercase;
 }
-.navigation{
+nav{
     margin-bottom: 32px;
 }
-header h2{
+.container>h2{
+    width: 280px;
+    margin: 0 auto;
     font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
 header p{
+    width: 220px;
+    margin: 0 auto;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
@@ -82,41 +88,26 @@ header p{
     border-radius: 20px;
     border: none;
     background-color: rgb(255, 78, 80);
-    margin-bottom: 118px;
-    cursor: pointer;
+    margin-bottom: 138px;
 }
 /* Main */
-main{
-    color: #333333; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.team{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 28px;
-}
-main h3{
-    font-size: 22px;
+h3{
+    font-size: 21.98px;
     color: #333333;
     margin-bottom: 14px;
 }
 .list-item{
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    width: 216px;
     color: #333333;
+    list-style: none;
 }
-.list-item:nth-child(-n+3)
-{
+.list-item:nth-child(-n+3){
     margin-bottom: 28px;
 }
-.foto-mustache, .foto-strange_man, .foto-beatiful_girl, .foto-girl_with_glasses{
+.foto{
 background-repeat: no-repeat;
+margin: 0 auto;
 width: 122px;
 height: 122px;
 text-align: center;
@@ -127,72 +118,27 @@ img{
     width: 122px;
     height: 122px;
 }
-.foto-mustache::after{
+.one::after, .two::after, .three::after, .four::after{
     content: " ";
     display: block;
     width: 40px;
-    height: 40px;
-    background-image: url(../img/icon/icon.png); 
-    position: absolute;
-}
-/* .foto-mustache{
-    background-image: url(../img/foto/Layer\ 6.png);
-}
-.foto-strange_man{
-    background-image: url(../img/foto/Layer\ 8.png);
-}
-.foto-beatiful_girl{
-    background-image: url(../img/foto/Layer\ 7.png);
-}
-.foto-girl_with_glasses{
-    background-image: url(../img/foto/Layer\ 10.png);
-} */
-.icon-tv, .icon-flask, .icon-coffee, .icon-airplane{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    border-radius: 40px;
-    border: 4px solid #ffffff;
+    height: 40px; 
     position: relative;
-    left: 82px;
-    top: 82px;
-    justify-content: center;
-    align-items: center; 
+    right: -82px;
+    top: -40px;
+    cursor: pointer;
 }
-.icon-tv{
-    background-color: #ff4e50;
+.one::after{
+    background-image: url(../img/icon/tv.png);
 }
-.icon-flask{
-    background-color: #ffa507;
+.two::after{
+    background-image: url(../img/icon/bottle.png);
 }
-.icon-coffee{
-    background-color: #1cd7ad;
+.three::after{
+    background-image: url(../img/icon/cup.png);
 }
-.icon-airplane{
-    background-color: #4e73db;
-}
-.icon-tv>a, .icon-flask>a, .icon-coffee>a, .icon-airplane>a{
-    background-repeat: no-repeat;
-}
-.icon-tv>a{
-    background-image: url(../img/icon/Shape128.png);
-    width: 17px;
-    height: 17px;
-}
-.icon-flask>a{
-    background-image: url(../img/icon/Shape\ 155.png);
-    width: 13px;
-    height: 16px;
-}
-.icon-coffee>a{
-    background-image: url(../img/icon/Shape\ 153.png);
-    width: 17px;
-    height: 17px;
-}
-.icon-airplane>a{
-    background-image: url(../img/icon/Shape\ 170.png);
-    width: 17px;
-    height: 16px;
+.four::after{
+    background-image: url(../img/icon/airplane.png);
 }
 .list-item h4{
     color: #333333;
@@ -209,11 +155,12 @@ img{
     font-weight: 300;
     line-height: 1.2;
 }
-footer{
-    padding: 0px 20px 0px 20px;
+main{
+    margin-bottom: 28px;
 }
-footer>button{
-    width: 100%;
+/* Footer */
+.main_button{
+    width: 280px;
     height: 40px;
     border: 2px solid #ff4e50;
     border-radius: 20px;
@@ -226,51 +173,49 @@ footer>button{
     line-height: 1.2;
     font-family: "Montserrat";
 } 
-@media(min-width:320px){
-
+.list-item:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+/* @Media */
+/* 320px */
+@media (min-width: 320px) {
+    header{
+        background-image: url(../img/slaider.png);
+    }
+}
+/* 748px */
+@media (min-width: 748px) {    
 header{
+    padding-top: 38px;
     background-image: url(../img/slaider_tablet.png);
-    height: auto;
-    max-width: 100%;
 }
 .container{
-    width: 768px;
-    padding: 38px 44px 0px;
+    margin:0 auto;
+    width: 748px;
 }
 .navigation{
-    margin:0 auto;
     width: 660px;
     height: 36px;
-    display: flex;
-    flex-direction: row-reverse;
+    display: inline-flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 146px;
 }
-h1 {
-   margin: 0;
-   width: 200px;
-   align-items: center;
-}
 .input{
     margin: 0;
-    width: 168px;
-    height: 36px;
-    justify-content: space-between;
 }
-header h2{
-    margin: 0 auto;
+.log{
+    margin-right: 3px;
+}
+.container>h2{
     width: 504px;
     font-size: 51.97px;
     margin-bottom: 26px;
-    
 }
-.ground{
+.container>p{
     width: 404px;
-    margin: 0 auto;
-}
-.ground p{
-    font-size: 24px;
+    font-size: 23.99px;
     margin-bottom: 32px;
 }
 .button{
@@ -278,105 +223,57 @@ header h2{
     font-size: 13.99px;
     margin-bottom: 234px;
 }
+main h3{
+    margin-bottom: 32px;
 }
-/* @media (min-width: 748px) and (max-width:960px){
+.team{
+    width: 492px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 38px;
 }
-    header{
-        width: 100%;
-        height: auto;
-        background-image: url(../img/slaider_tablet.png);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 38px;
-        margin-bottom: 70px;
-    }
-    .for_devices{
-        width: 87.23958333333333%;
-        height: 36px;
-        display: inline-flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 146px;
-    }
-    .input{
-        margin-bottom: 0px;
-    }
-    header h2{
-        width: 70.0625%;
-        font-size: 52px;
-        margin-bottom: 26px;
-    }
-    header p{
-        font-size: 24px;
-        margin-bottom: 32px;
-    }
-    .button{
-        width: 29.42708333333333%;
-        margin-bottom: 234px;
-    }
-    main h3{
-        width: 52.60416666666667%;
-        margin-bottom: 32px;
-    }
-    .team{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        margin-bottom: 38px;
-    }
-    .list-item{
-        width: 30.72916666666667%;
-        height: auto;
-        margin: 0 2.604166666666667%; 
-        text-align: center;
-    }
-    .list-item:nth-child(1), .list-item:nth-child(3){
-        margin-bottom: 56px;
-    }
-    .list-item:nth-child(2){
-        order: 1;
-        margin-bottom: 0px;
-    }
-    .list-item:nth-child(4){
-        order: 1;
-    }
-    .list-item h4{
+.list-item:nth-child(1), .list-item:nth-child(3){
+    margin-bottom: 56px;
+}
+.list-item:nth-child(2){
+    order: 1;
+    margin-bottom: 0px;
+}
+.list-item:nth-child(4){
+    order: 1;
+}
+.list-item h4{
     margin-bottom: 12px;
-    }
-    footer button{
-        width: 25%;
-        font-size: 13.98;
-    }
 }
-@media screen and (min-width: 1440px){
-    .container{
-        min-width: 1440px;
-        max-width: 100vw;
-    }
+.main_button{
+    width: 192px;
+    font-size: 13.98px;
+    margin-bottom: 40px;
+}
+}
+/* 940px */
+@media (min-width: 940px) {    
     header{
         background-image: url(../img/slaider_desktop.png);
     }
-   header h2{
-    width: 504px;
-}
-.team{
-    flex-wrap: nowrap;
-}
- .list-item{
-    width: 15.27777777777778%;
-    margin: 0px;
-}
-.list-item:nth-child(1), .list-item:nth-child(3){
-    margin-bottom: 0px;
-}
-.list-item:nth-child(-n+3){
-    margin-right: 20px;
-} 
-footer button{
-    width: 13.33333333333333%;
-}
-} */
+    .container{
+        width: 940px;
+    }
+    .navigation{
+        width: 940px;
+    }
+    .team{
+        width: 940px;
+        margin-bottom: 34px;
+    }
+    .list-item:nth-child(1), .list-item:nth-child(3){
+        margin-bottom: 0;
+    }
+    .main_button{
+        margin-bottom: 72px;
+    }
+    }
