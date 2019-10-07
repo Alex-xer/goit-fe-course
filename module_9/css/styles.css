@@ -7,24 +7,92 @@
     font-family: 'Montserrat', sans-serif;
 }
 /* Header */
+header{
+    display: block; 
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin-bottom: 66px;
+}
 .container{
     margin: 0 auto;
+    padding: 0px;
     min-width: 320px;
     max-width: 767px;
-    align-items: center;
+    padding-top: 20px;
+    text-align: center;
 }
-.header{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.row{
+    padding-right: 0;
+    padding-left: 0;
 }
-header{
-    width: 320px;
+[class*="col-"]{
+    padding-right: 0;
+    padding-left: 0;
 }
- header{
+.input{
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 112px;
+}
+.log a, .sign a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7px;
+}
+.log, .sign, .button{
+    font-size: 14px;
+    cursor: pointer;
+}
+.sign{
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    color: #ffffff;
+    background-color: transparent;
+ }
+ .log, .sign, .link, .topic,  .button/*,h3*/{
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: "Montserrat";
+    color: #ffffff;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+.navigation{
+    margin-bottom: 32px;
+}
+.topic{
+    margin: 0 auto;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+header p{
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.description{
+    margin-bottom: 16px;
+}
+.button{
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 78, 80);
+    margin-bottom: 138px;
+}
+
+/*header{
     display: block; 
     height: auto;
     background-repeat: no-repeat;
@@ -33,7 +101,7 @@ header{
     color: #ffffff;
     padding-top: 20px;
     margin-bottom: 66px;
-}/*
+}
 .container{
     margin:0 auto;
     width: 320px;
@@ -43,10 +111,9 @@ header{
     width: 180px;
     margin: 0 auto;
 }
-*/
 .input{
     margin: 0 auto;
-    width: 212px;
+    width: 154px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 112px;
@@ -69,14 +136,13 @@ header{
     background-color: transparent;
 
 }
-.log, .sign, .h1, .topic, .button, h3{
+.log, .sign, h1 a, header h2,  .button, h3{
     font-weight: bold;
     line-height: 1.2;
     font-family: "Montserrat";
     color: #ffffff;
 }
-.h1 a{
-    margin: 0 auto;
+h1 a{
     text-decoration: none;
     font-size: 20px;
     display: block;
@@ -85,14 +151,14 @@ header{
 nav{
     margin-bottom: 32px;
 }
-.topic{
+.container>h2{
     width: 280px;
     margin: 0 auto;
     font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
-.navigation p{
+header p{
     width: 220px;
     margin: 0 auto;
     font-size: 18px;
@@ -108,7 +174,7 @@ nav{
     border: none;
     background-color: rgb(255, 78, 80);
     margin-bottom: 138px;
-} 
+}
 /* Main */
 /* h3{
     font-size: 21.98px;
