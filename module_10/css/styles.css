@@ -112,6 +112,9 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
 }
                                           /* Title */
 /* Section service */
+.service{
+    padding: 0 10px;
+}
 .service, .team{
     display: flex;
     flex-direction: column;
@@ -147,7 +150,6 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     background-color: #f38181;
     display: block;
     margin-top: 40px;
-     
 }
 .service_container{
     display: flex;
@@ -156,39 +158,44 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     margin-bottom: 90px;
 }
 .container_blok{
-    width: 400px;
+    width: 380px;
     display: flex;
 }
 .container_blok:not(:nth-child(n+4)){
     margin-bottom: 100px;
 }
-.blok_icon_alarm,.blok_icon_graph, .blok_icon_computer,.blok_icon_book,.blok_icon_home,.blok_icon_image{
-    width: 100px;
+.container_blok::before{
+    content: "";
+    display: block;
+    color: #95e1d3;
+    width: 60px;
     height: auto;
     background-position: 50% 0%;
+}
+.alarm, .graph, .computer, .book, .home, .image{
     background-repeat: no-repeat;
 }
-.blok_icon_alarm{
+.alarm{
     background-image: url(../img/icon/ALARM.png);
  }
-.blok_icon_graph{
+.graph{
     background-image: url(../img/icon/LINE\ GRAPH.png);
  }
- .blok_icon_computer{
+ .computer{
     background-image: url(../img/icon/COMPUTER\ _\ OK.png);
  }
-.blok_icon_book{
+.book{
     background-image: url(../img/icon/BOOK\ 2.png);
  }
-.blok_icon_home{
+.home{
     background-image: url(../img/icon/HOME.png);
  }
-.blok_icon_image{
+.image{
     background-image: url(../img/icon/IMAGE.png);
  }
 .container_blok h3, .boxfeatures h3{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     color: rgb(51, 51, 51);
     margin-bottom: 14px;
@@ -249,24 +256,17 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     height: 55px;
     justify-content: space-around;
 }  
-.blok_icon_facebook--active, .blok_icon_twitter--active, .blok_icon_pinterest--active, .blok_icon_instagram--active{
+/* Active blok */
+.blok_icon{
     width: 55px;
     height: 55px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.blok_icon_facebook--active{
-    background-image: url(../img/feature_icon/facebook.png);
-}
-.blok_icon_twitter--active{
-    background-image: url(../img/feature_icon/twitter.png);
-}
-.blok_icon_pinterest--active{
-    background-image: url(../img/feature_icon/pinterest.png);
-}
-.blok_icon_instagram--active{
-    background-image: url(../img/feature_icon/instagram.png);
+.icon_facebook--active, .icon_twitter--active, .icon_pinterest--active, .icon_instagram--active{
+   fill: #f38181;
 }
 .boxfeatures img{
     max-width: 100%;
@@ -291,11 +291,14 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     opacity:1 ;
     box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
 }
-.blok_icon_facebook--active:hover, .blok_icon_twitter--active:hover, .blok_icon_pinterest--active:hover, .blok_icon_instagram--active:hover{
+.blok_icon:hover{
+    background-color:#f38181;
+    cursor: pointer;
+}
+.blok_icon:hover .icon_facebook--active, .blok_icon:hover .icon_twitter--active, .blok_icon:hover .icon_pinterest--active, .blok_icon:hover .icon_instagram--active{
     transition-property: background-color;
     transition-duration: 0.2s;
-    background-color: #95e1d3;
-    cursor: pointer;
+    fill:white;
 }
 
 /* Footer */
@@ -361,4 +364,19 @@ footer button:hover{
     background-color:#f38181;
     transition-property: color;
     transition-duration: 0.2s;
+}
+/* Media */
+@media (min-resolution: 192dpi), (min-resolution:2dppx){
+    .menu{
+        background-image: url(../img/features_retina/baner@2x.jpg);
+    }
+    .one{
+        background-image: url(../img/features_retina/layer\ 1@2x.jpg);
+    }
+    .two{
+        background-image: url(../img/features_retina/layer\ 2@2x.jpg)
+    }
+    .three{
+        background-image: url(../img/features_retina/layer\ 3@2x.jpg)
+    }
 }
