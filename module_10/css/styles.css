@@ -13,22 +13,28 @@
     margin: 0 auto;
     padding-top: 28px;
     padding-bottom: 112px;
+    background-image: url(../img/baner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 998px;
+    color: #ffffff;
+    margin-bottom: 46px;
 }
 .menu_navigation{
     min-height: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 164px;
 }
 .menu_navigation_logo{
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     text-decoration: none;
-    color: #95e1d3;
+    color: #ffffff;
+    padding: 0 6px;
 }
 .menu_navigation_nav{
-    width: 490px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -42,7 +48,7 @@
 .menu_navigation_nav a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #95e1d3;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -53,17 +59,56 @@
     height: 3px;
     display: block;
     margin-top: 12px;
-    background-color: #f38181;
+    background-color: #fce38a;
     opacity: 0;
 }
-.menu_navigation_nav a:hover{
+.menu_navigation_nav a:hover, .nav_icon_glass:hover, .nav_icon_basket:hover{
     transition-property: color;
     transition-duration: 0.2s;
-    color: #f38181;
+    color: #fce38a;
 }
-.menu_navigation_nav a:hover::after{
+.menu_navigation_nav a:hover::after,  .nav_icon_glass:hover::after, .nav_icon_basket:hover::after{
     transition-duration: 0.2s;
     opacity: 1;
+}
+.nav_icon_glass, .nav_icon_basket{
+    fill:white;;
+}
+.nav_icon_glass:hover, .nav_icon_basket:hover{
+    transition-duration: 0.2s;
+    fill: #fce38a;
+    cursor: pointer;
+}
+.menu_navigation_pretitle{
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 34px;
+}
+h1{
+    margin: 0 auto;
+    width: 840px;
+    text-align: center;
+    font-size: 150px;
+    text-transform: uppercase;
+    margin-bottom: 86px;
+}
+h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.menu>button{
+    display: block;
+    width: 162px;
+    height: 40px;
+    border: 3px solid;
+    margin: 0 auto;
+    color: white;
+    background-color: transparent;
+    font-size: 14px;
+}
+.menu>button:hover{
+    cursor: pointer;
+    color:#f38181;
 }
                                           /* Title */
 /* Section service */
@@ -72,16 +117,16 @@
     flex-direction: column;
     align-items: center;
 }
-.servise_pretitle, .team_pretitle{
+.servise_pretitle, .team_pretitle, .menu_navigation_pretitle{
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
+}
+.servise_pretitle, .team_pretitle{
     font-size: 24px;
     color: #333333;
     margin-bottom: 17px;
 }
 .service_title1, .team_title2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     font-size: 30px;
     color: #333333;
     text-transform: uppercase;
@@ -300,7 +345,7 @@ input{
     line-height: 1.6;
     font-weight: 300;
  }
-button {
+footer button {
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
@@ -308,13 +353,11 @@ button {
     border: none;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Montserrat";
-    font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     cursor: pointer;
 }
-button:hover{
+footer button:hover{
     background-color:#f38181;
     transition-property: color;
     transition-duration: 0.2s;
