@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 /* Menu */
-.menu{
+.header{
     width: 1200px;
     margin: 0 auto;
     padding-top: 28px;
@@ -20,20 +20,20 @@
     color: #ffffff;
     margin-bottom: 46px;
 }
-.menu_navigation{
+.header-nav{
     min-height: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 164px;
 }
-.menu_navigation_logo{
+.header-nav__logo{
     font-size: 30px;
     text-decoration: none;
     color: #ffffff;
     padding: 0 6px;
 }
-.menu_navigation_nav{
+.header-nav__list{
     width: 600px;
     display: flex;
     justify-content: space-between;
@@ -41,11 +41,11 @@
     align-items: flex-end;
     padding-top: 18px;
 }
-.menu_navigation_nav li{
+.header-nav__item{
     display: flex;
     align-items: flex-end;
 }
-.menu_navigation_nav a{
+.header-nav__link{
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -53,7 +53,7 @@
     flex-direction: column;
     align-items: flex-end;
 }
-.menu_navigation_nav a::after{
+.header-nav__link::after{
     content: "";
     min-width: 100%;
     height: 3px;
@@ -62,24 +62,24 @@
     background-color: #fce38a;
     opacity: 0;
 }
-.menu_navigation_nav a:hover, .nav_icon_glass:hover, .nav_icon_basket:hover{
+.header-nav__link:hover, .header-nav__icon--glass:hover, .header-nav__icon--basket:hover{
     transition-property: color;
     transition-duration: 0.2s;
     color: #fce38a;
 }
-.menu_navigation_nav a:hover::after,  .nav_icon_glass:hover::after, .nav_icon_basket:hover::after{
+.header-nav__link:hover::after,  .header-nav__icon--glass:hover::after, .header-nav__icon--basket:hover::after{
     transition-duration: 0.2s;
     opacity: 1;
 }
-.nav_icon_glass, .nav_icon_basket{
+.header-nav__icon--glass, .header-nav__icon--basket{
     fill:white;;
 }
-.nav_icon_glass:hover, .nav_icon_basket:hover{
+.header-nav__icon--glass:hover, .header-nav__icon--basket:hover{
     transition-duration: 0.2s;
     fill: #fce38a;
     cursor: pointer;
 }
-.menu_navigation_pretitle{
+.header__pretitle{
     font-size: 72px;
     text-align: center;
     margin-bottom: 34px;
@@ -92,11 +92,11 @@ h1{
     text-transform: uppercase;
     margin-bottom: 86px;
 }
-h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>button{
+h1, .header-nav__logo, .section__title, .footer__button, .header__button{
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
-.menu>button{
+.header__button{
     display: block;
     width: 162px;
     height: 40px;
@@ -106,44 +106,41 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     background-color: transparent;
     font-size: 14px;
 }
-.menu>button:hover{
+.header__button:hover{
     cursor: pointer;
     color:#f38181;
 }
                                           /* Title */
 /* Section service */
-.service{
+.section{
     padding: 0 10px;
-}
-.service, .team{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.servise_pretitle, .team_pretitle, .menu_navigation_pretitle{
+.section__pretitle, .header__pretitle{
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
 }
-.servise_pretitle, .team_pretitle{
+.section__pretitle{
+    display: block;
     font-size: 24px;
     color: #333333;
-    margin-bottom: 17px;
 }
-.service_title1, .team_title2{
+.section__title{
     font-size: 30px;
     color: #333333;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.service_title1{
+.one{
     margin-bottom: 64px;
 }
-.team_title2{
+.two{
     margin-bottom: 42px;
 }
- .service_title1::after, .team_title2::after{
+ .section__title::after{
     content: "";
     width: 60px;
     height: 3px;
@@ -151,20 +148,20 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     display: block;
     margin-top: 40px;
 }
-.service_container{
+.section__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 90px;
 }
-.container_blok{
+.section__item{
     width: 380px;
     display: flex;
 }
-.container_blok:not(:nth-child(n+4)){
+.section__item:not(:nth-child(n+4)){
     margin-bottom: 100px;
 }
-.container_blok::before{
+.section__item::before{
     content: "";
     display: block;
     color: #95e1d3;
@@ -181,7 +178,7 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
 .graph{
     background-image: url(../img/icon/LINE\ GRAPH.png);
  }
- .computer{
+.computer{
     background-image: url(../img/icon/COMPUTER\ _\ OK.png);
  }
 .book{
@@ -193,7 +190,7 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
 .image{
     background-image: url(../img/icon/IMAGE.png);
  }
-.container_blok h3, .boxfeatures h3{
+.section__subtitle, .section__list-features h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -201,20 +198,20 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     margin-bottom: 14px;
     line-height: 1.2;
 }
-.container_blok h3, .boxfeatures h3{
+.section__subtitle, .section__list-features h3{
     text-transform: uppercase;
 }
-.container_blok p, .team_text, .boxfeatures p{
+.section__blok p, .section__text, .section__list-features p{
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
     line-height: 1.6;
     font-weight: 400;
 }
-.container_blok div{
+.section__blok{
     width: 300px;
 }     
-.team_text{
+.section__text{
     width: 980px;
     text-align: center;
     margin-bottom: 90px;
@@ -223,20 +220,20 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
 .team{
     padding-bottom: 80px;
 }
-.team_boxfeatures{
+.section__list-features{
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.boxfeatures{
+.section__item-features{
     width: 380px;
     list-style: none;
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.features_blok{
+.features__blok{
     width: 380px;
     height: 470px;
     background: linear-gradient( to bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100% );
@@ -249,7 +246,7 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     justify-content: center;
     align-items: center;
 }
-.features_blok ul{
+.features__list{
     display: flex;
     list-style: none;
     width: 224px;
@@ -257,7 +254,7 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     justify-content: space-around;
 }  
 /* Active blok */
-.blok_icon{
+.blok__icon{
     width: 55px;
     height: 55px;
     background-color: #fce38a;
@@ -265,78 +262,83 @@ h1, .menu_navigation_logo, .service_title1, .team_title2, footer button, .menu>b
     justify-content: center;
     align-items: center;
 }
-.icon_facebook--active, .icon_twitter--active, .icon_pinterest--active, .icon_instagram--active{
+.icon__facebook--active, .icon__twitter--active, .icon__pinterest--active, .icon__instagram--active{
    fill: #f38181;
 }
-.boxfeatures img{
+.features__img{
     max-width: 100%;
     margin-bottom: 28px;
 }
-.boxfeatures h3{
+.section__item-features h3{
   text-align: center;
 }
-.boxfeatures p{
+.section__item-features p{
     text-align: center;
     font-weight: 300;
 }
- .boxfeatures:hover .features_img{
+ .section__item-features:hover .features__img{
     position: relative;
     left: -10px;
     top: -10px;
     z-index: 2;
 }
-.boxfeatures:hover .features_blok{
+.section__item-features:hover .features__blok{
     z-index: 3;
     transition-duration: 0.2s;
     opacity:1 ;
     box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
 }
-.blok_icon:hover{
+.blok__icon:hover{
     background-color:#f38181;
     cursor: pointer;
 }
-.blok_icon:hover .icon_facebook--active, .blok_icon:hover .icon_twitter--active, .blok_icon:hover .icon_pinterest--active, .blok_icon:hover .icon_instagram--active{
+.blok__icon:hover .icon__facebook--active, .blok__icon:hover .icon__twitter--active, .blok__icon:hover .icon__pinterest--active, .blok__icon:hover .icon__instagram--active{
     transition-property: background-color;
     transition-duration: 0.2s;
     fill:white;
 }
 
 /* Footer */
-.underline{
+.section__underline{
     width: 1200px;
     height: 1px;
     background-color: #e5e5e5;
     margin-bottom: 10px;
 }
-footer{
+.footer{
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
 }
-.footer_left{
+.footer__left, .footer__right{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
-.left_lineblack, .left_linered{
+.footer__left{
+    justify-content: flex-start;
     padding-right: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
-} 
-.left_lineblack{
+}
+.footer__right{
+    justify-content: flex-end;
+}
+/* .left_lineblack, .left_linered{
+    padding-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}  */
+.footer__left--black{
     color: rgb(51, 51, 51);
 }
-.left_linered{
+.footer__left--red{
     color: #f6a1a1;
 }
-.footer_right{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-input{
+.input{
     padding-left: 12px;
     border: 1px solid #e5e5e5;
     width: 230px;
@@ -348,7 +350,7 @@ input{
     line-height: 1.6;
     font-weight: 300;
  }
-footer button {
+.footer__button {
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
@@ -360,23 +362,23 @@ footer button {
     line-height: 1.2;
     cursor: pointer;
 }
-footer button:hover{
+.footer__button:hover{
     background-color:#f38181;
     transition-property: color;
     transition-duration: 0.2s;
 }
 /* Media */
 @media (min-resolution: 192dpi), (min-resolution:2dppx){
-    .menu{
+    .header{
         background-image: url(../img/features_retina/baner@2x.jpg);
     }
-    .one{
+    .first{
         background-image: url(../img/features_retina/layer\ 1@2x.jpg);
     }
-    .two{
+    .second{
         background-image: url(../img/features_retina/layer\ 2@2x.jpg)
     }
-    .three{
+    .third{
         background-image: url(../img/features_retina/layer\ 3@2x.jpg)
     }
 }
