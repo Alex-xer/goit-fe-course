@@ -77,7 +77,7 @@
 .header-nav__icon--glass:hover, .header-nav__icon--basket:hover{
     transition-duration: 0.2s;
     fill: #fce38a;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .header__pretitle{
     font-size: 72px;
@@ -114,6 +114,8 @@ h1, .header-nav__logo, .section__title, .footer__button, .header__button{
 /* Section service */
 .section{
     padding: 0 10px;
+    width: 1200px ;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,25 +171,25 @@ h1, .header-nav__logo, .section__title, .footer__button, .header__button{
     height: auto;
     background-position: 50% 0%;
 }
-.alarm, .graph, .computer, .book, .home, .image{
+.service__item--alarm, .service__item--graph, .service__item--computer, .service__item--book, .service__item--home, .service__item--image{
     background-repeat: no-repeat;
 }
-.alarm{
+.service__item--alarm{
     background-image: url(../img/icon/ALARM.png);
  }
-.graph{
+.service__item--graph{
     background-image: url(../img/icon/LINE\ GRAPH.png);
  }
-.computer{
+.service__item--computer{
     background-image: url(../img/icon/COMPUTER\ _\ OK.png);
  }
-.book{
+.service__item--book{
     background-image: url(../img/icon/BOOK\ 2.png);
  }
-.home{
+.service__item--home{
     background-image: url(../img/icon/HOME.png);
  }
-.image{
+.service__item--image{
     background-image: url(../img/icon/IMAGE.png);
  }
 .section__subtitle, .section__list-features h3{
@@ -217,14 +219,12 @@ h1, .header-nav__logo, .section__title, .footer__button, .header__button{
     margin-bottom: 90px;
 }
 /* Section team */
-.team{
-    padding-bottom: 80px;
-}
 .section__list-features{
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
 }
 .section__item-features{
     width: 380px;
@@ -325,13 +325,6 @@ h1, .header-nav__logo, .section__title, .footer__button, .header__button{
 .footer__right{
     justify-content: flex-end;
 }
-/* .left_lineblack, .left_linered{
-    padding-right: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-}  */
 .footer__left--black{
     color: rgb(51, 51, 51);
 }
