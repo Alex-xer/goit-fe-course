@@ -1,0 +1,10 @@
+.text {
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  font-size: 18px;
+}
+
+.text:hover {
+  background-color: #03A9F4;
+}
+/*# sourceMappingURL=index.css.map */

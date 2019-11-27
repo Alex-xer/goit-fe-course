@@ -100,7 +100,7 @@
     opacity: 1;
 }
 .header-nav__icon--glass, .header-nav__icon--basket{
-    fill:white;;
+    fill:white;
 }
 .header-nav__icon--glass:hover, .header-nav__icon--basket:hover{
     -webkit-transition-duration: 0.2s;
