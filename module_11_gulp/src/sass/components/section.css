@@ -75,4 +75,17 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.section__item:not(:nth-child(n+4)) {
+  margin-bottom: 100px;
+}
+
+.section__item::before {
+  content: "";
+  display: block;
+  color: 'color-figures';
+  width: 60px;
+  height: auto;
+  background-position: 50% 0%;
+}
 /*# sourceMappingURL=section.css.map */

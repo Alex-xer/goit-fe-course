@@ -15,7 +15,7 @@
 .header-nav__logo {
   font-size: 30px;
   text-decoration: none;
-  color: 'text-color';
+  color: '$text-color';
   padding: 0 6px;
 }
 
@@ -46,7 +46,7 @@
 .header-nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: 'text-color';
+  color: '$text-color';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@
   height: 3px;
   display: block;
   margin-top: 12px;
-  background-color: 'background-color';
+  background-color: '$background-color';
   opacity: 0;
 }
 
@@ -74,7 +74,7 @@
   transition-property: color;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  color: 'background-color';
+  color: '$background-color';
 }
 
 .header-nav__link:hover::after, .header-nav__icon--glass:hover::after, .header-nav__icon--basket:hover::after {
@@ -84,12 +84,12 @@
 }
 
 .header-nav__icon--glass, .header-nav__icon--basket {
-  fill: 'text-color';
+  fill: '$text-color';
 }
 
 .header-nav__icon--glass:hover, .header-nav__icon--basket:hover {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  fill: 'background-color';
+  fill: '$background-color';
 }
 /*# sourceMappingURL=navigation.css.map */
