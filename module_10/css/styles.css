@@ -246,7 +246,7 @@ h1, .header-nav__logo, .section__title, .footer__button, .header__button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: rgb(51, 51, 51);
+    color: #333333;
     margin-bottom: 14px;
     line-height: 1.2;
 }

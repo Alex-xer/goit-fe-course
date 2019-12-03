@@ -101,29 +101,32 @@
     background-repeat: no-repeat;
   }
 
-  &__item--alarm{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/ALARM-min.png);
+  &__item{
+    &--alarm{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/ALARM-min.png);
+    }
+    
+    &--graph{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/LINE_GRAPH-min.png);
+    }
+    
+    &--computer{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/COMPUTER_OK-min.png);
+    }
+    
+    &--book{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/BOOK_2-min.png);
+    }
+    
+    &--home{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/HOME-min.png);
+    }
+    
+    &--image{
+      background-image: url(/module_11_gulp/src/images/img/icon_mini/IMAGE-min.png);
+    }
   }
-
-  &__item--graph{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/LINE_GRAPH-min.png);
-  }
-
-  &__item--computer{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/COMPUTER_OK-min.png);
-  }
-
-  &__item--book{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/BOOK_2-min.png);
-  }
-
-  &__item--home{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/HOME-min.png);
-  }
-
-  &__item--image{
-    background-image: url(/module_11_gulp/src/images/img/icon_mini/IMAGE-min.png);
-  }
+ 
 }
 
 .section{
