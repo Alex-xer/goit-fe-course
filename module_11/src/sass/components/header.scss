@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wraper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu */
+
+.header {
+  padding-top: 28px;
+  padding-bottom: 112px;
+  background-image: url(../images/feuters_item_mini/baner-min.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 998px;
+  color: $text-color;
+  margin-bottom: 46px;
+}

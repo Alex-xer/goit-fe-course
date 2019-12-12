@@ -1,0 +1,17 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'base.scss';
+@import 'variables';
+ 
+/*Components*/
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/headline';
+@import 'components/section_service';
+@import 'components/section_team';
+@import 'components/active_blok';
+@import 'components/footer';
+@import 'components/media';

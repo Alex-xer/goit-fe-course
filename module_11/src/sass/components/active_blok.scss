@@ -1,0 +1,63 @@
+.blok__icon{
+  width: 55px;
+  height: 55px;
+  background-color: $background-color ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.icon{
+  &__facebook--active,
+  &__twitter--active,
+  &__pinterest--active,
+  &__instagram--active{
+    fill: $background-color-underline ;
+  }
+}
+  
+.features__img{
+  max-width: 100%;
+  margin-bottom: 28px;
+}
+  
+.section__item-features{
+  & h3{
+    text-align: center;
+  }
+  
+  & p{
+    text-align: center;
+    font-weight: 300;
+  }
+  
+  &:hover .features__img{
+    position: relative;
+    left: -10px;
+    top: -10px;
+    z-index: 2;
+  }
+
+  &:hover .features__blok{
+    z-index: 3;
+    transition-duration: 0.2s;
+    opacity: 1 ;
+    box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
+  }
+}
+  
+.blok__icon{
+  &:hover{
+    background-color: $background-color-underline ;
+    cursor: pointer;
+  }
+  
+  &:hover .icon__facebook--active,
+  &:hover .icon__twitter--active,
+  &:hover .icon__pinterest--active,
+  &:hover .icon__instagram--active{
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    fill: $text-color ;
+  }
+}

@@ -1,0 +1,18 @@
+/* Media */
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
+  .header{
+    background-image: url(/module_11/src/images/features_retina_mini/baner@2x-min.jpg);
+  }
+
+  .first{
+    background-image: url(/module_11/src/images/features_retina_mini/layer_1@2x-min.jpg);
+  }
+
+  .second{
+    background-image: url(/module_11/src/images/features_retina_mini/layer_2@2x-min.jpg)
+  }
+
+  .third{
+    background-image: url(/module_11/src/images/features_retina_mini/layer_3@2x-min.jpg)
+  }
+}
